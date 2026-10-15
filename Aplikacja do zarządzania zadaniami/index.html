@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista zadań</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="kontener">
+    <h1>Lista zadań</h1>
+
+    <div class="liczniki">
+        <p>Wszystkie: <span id="wszystkie">0</span></p>
+        <p>Wykonane: <span id="wykonane">0</span></p>
+        <p>Do zrobienia: <span id="pozostale">0</span></p>
+    </div>
+
+    <form id="formularz">
+        <input type="text" id="zadanie" placeholder="Dodaj nowe zadanie...">
+        <button type="submit">Dodaj</button>
+    </form>
+
+    <div class="filtry">
+        <button class="filtr aktywny" data-filtr="wszystkie">Wszystkie</button>
+        <button class="filtr" data-filtr="do-zrobienia">Do zrobienia</button>
+        <button class="filtr" data-filtr="wykonane">Wykonane</button>
+    </div>
+
+    <ul id="lista"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

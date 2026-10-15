@@ -1,0 +1,1 @@
+Strona umożliwia dodawanie i usuwanie zadań, oznaczanie ich jako wykonane oraz filtrowanie listy. Aplikacja wyświetla liczbę wszystkich zadań, wykonanych i do zrobienia.

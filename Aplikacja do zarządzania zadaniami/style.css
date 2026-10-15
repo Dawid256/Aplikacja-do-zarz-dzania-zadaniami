@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.kontener {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ccc;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+}
+
+.liczniki {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.filtry {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filtr {
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+.filtr.aktywny {
+    background: #1e3a8a;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f1f5f9;
+    border-radius: 6px;
+}
+
+li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+li.zrobione span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.usun {
+    background: #dc2626;
+}
+
+@media (max-width: 450px) {
+    form {
+        flex-direction: column;
+    }
+
+    .liczniki {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .liczniki p {
+        margin: 5px;
+    }
+}
